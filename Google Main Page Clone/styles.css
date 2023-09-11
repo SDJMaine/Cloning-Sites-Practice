@@ -3,14 +3,18 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: Roboto, arial, sans-serif;
-
-
+    font-size: 14px;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #202124;
 }
 
+a {
+    text-decoration: none;
+    color: #bdc1c6
+}
 
 /* Setting Baselines ****************************** */
 
@@ -34,9 +38,6 @@ header {
     padding-right: 15px;
 }
 
-
-/* left side */
-
 .left-side, .right-side {
     display: flex;
     justify-content: space-around;
@@ -45,7 +46,16 @@ header {
     padding-top: 20px;   
 }
 
+/* left side */
+
+
+
 /* right side */
+
+.right-links {
+    display: flex;
+    gap: 18px;
+}
 
 
 /* main ******************************************** */
@@ -60,10 +70,32 @@ main {
 /* footer  ***************************************** */
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    
+    background: #171717;
+    flex-shrink: 0;
 }
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.start {
+    justify-content: flex-start;
+    min-width: 30%;
+}
+
+.middle {
+    order: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.end {
+    justify-content: flex-end;
+    min-width: 30%;
+}
 /* left side */
 
 /* middle */
